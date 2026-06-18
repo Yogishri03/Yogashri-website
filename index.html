@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yogashri R S | Portfolio | Full Stack Java Developer & AI Graduate</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Professional portfolio of Yogashri R S, B.Tech graduate in Artificial Intelligence & Data Science and Full Stack Java Developer intern with hands-on experience in Java, Spring Boot, Machine Learning, and Computer Vision.">
+  <meta name="keywords" content="Yogashri R S, Yogashri, Full Stack Java Developer, AI & Data Science Graduate, Spring Boot Developer, Java Developer Portfolio, Machine Learning, Deep Learning, Computer Vision, Elysium Academy, Perambalur Developer">
+  <meta name="author" content="Yogashri R S">
+  
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              300: '#93c5fd',
+              400: '#60a5fa',
+              500: '#2563eb',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+            },
+            secondary: {
+              50: '#f5f3ff',
+              100: '#ede9fe',
+              200: '#ddd6fe',
+              300: '#c4b5fd',
+              400: '#a78bfa',
+              500: '#7c3aed',
+              600: '#6d28d9',
+              700: '#5b21b6',
+              800: '#4c1d95',
+              900: '#2e1065',
+            },
+            accent: {
+              50: '#ecfeff',
+              100: '#cffafe',
+              200: '#a5f3fc',
+              300: '#67e8f9',
+              400: '#22d3ee',
+              500: '#06b6d4',
+              600: '#0891b2',
+              700: '#0e7490',
+              800: '#155e75',
+              900: '#164e63',
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Google Fonts & Libraries -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- AOS (Animate on Scroll) CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Lucide Icons & TypedJS via CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 antialiased relative overflow-x-hidden bg-grid-pattern">
+
+  <!-- ==========================================
+       BACKGROUND ANIMATED BLURS (Aesthetic Glows)
+       ========================================== -->
+  <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
+    <div class="absolute top-10 left-1/4 w-72 h-72 bg-primary-400/20 dark:bg-primary-900/10 rounded-full blur-3xl animate-float-slow"></div>
+    <div class="absolute top-[80vh] right-10 w-96 h-96 bg-secondary-400/20 dark:bg-secondary-900/10 rounded-full blur-3xl animate-float-medium"></div>
+    <div class="absolute top-[180vh] left-10 w-80 h-80 bg-accent-400/15 dark:bg-accent-900/10 rounded-full blur-3xl animate-float-fast"></div>
+    <div class="absolute top-[280vh] right-[15vw] w-96 h-96 bg-primary-400/20 dark:bg-primary-900/10 rounded-full blur-3xl animate-float-slow"></div>
+  </div>
+
+  <!-- ==========================================
+       HEADER / NAVIGATION BAR (Sticky Glass)
+       ========================================== -->
+  <header class="fixed top-0 left-0 w-full z-50 glass-nav transition-all duration-300">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="flex items-center space-x-2 group">
+        <span class="text-2xl font-extrabold bg-gradient-to-r from-primary-600 to-secondary-500 bg-clip-text text-transparent group-hover:opacity-80 transition-opacity">
+          Yogashri R S
+        </span>
+      </a>
+
+      <!-- Desktop Links -->
+      <div class="hidden md:flex items-center space-x-8">
+        <a href="#home" class="nav-link text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-accent-400 transition-colors">Home</a>
+        <a href="#about" class="nav-link text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-accent-400 transition-colors">About</a>
+        <a href="#skills" class="nav-link text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-accent-400 transition-colors">Skills</a>
+        <a href="#experience" class="nav-link text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-accent-400 transition-colors">Experience</a>
+        <a href="#projects" class="nav-link text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-accent-400 transition-colors">Projects</a>
+        <a href="#education" class="nav-link text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-accent-400 transition-colors">Education</a>
+        <a href="#certifications" class="nav-link text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-accent-400 transition-colors">Certifications</a>
+        <a href="#contact" class="nav-link text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary-600 dark:hover:text-accent-400 transition-colors">Contact</a>
+      </div>
+
+      <!-- Controls (Dark Mode Toggle & Mobile Menu Btn) -->
+      <div class="flex items-center space-x-4">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" type="button" aria-label="Toggle Dark Mode" class="p-2 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-primary-500 rounded-lg text-sm transition-colors">
+          <i id="theme-toggle-dark-icon" data-lucide="moon" class="w-5 h-5"></i>
+          <i id="theme-toggle-light-icon" data-lucide="sun" class="w-5 h-5 hidden"></i>
+        </button>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" type="button" aria-label="Toggle navigation menu" class="md:hidden p-2 text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 transition-colors">
+          <i data-lucide="menu" class="burger-icon w-6 h-6"></i>
+          <i data-lucide="x" class="close-icon w-6 h-6 hidden"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden glassmorphism flex-col absolute top-16 left-0 w-full py-4 px-6 space-y-3 shadow-xl rounded-b-2xl border-t-0 animate-fade-in">
+      <a href="#home" class="mobile-menu-link block text-base font-medium py-2 px-3 rounded-lg hover:bg-slate-100/50 dark:hover:bg-slate-800/50 hover:text-primary-600 transition-colors">Home</a>
+      <a href="#about" class="mobile-menu-link block text-base font-medium py-2 px-3 rounded-lg hover:bg-slate-100/50 dark:hover:bg-slate-800/50 hover:text-primary-600 transition-colors">About</a>
+      <a href="#skills" class="mobile-menu-link block text-base font-medium py-2 px-3 rounded-lg hover:bg-slate-100/50 dark:hover:bg-slate-800/50 hover:text-primary-600 transition-colors">Skills</a>
+      <a href="#experience" class="mobile-menu-link block text-base font-medium py-2 px-3 rounded-lg hover:bg-slate-100/50 dark:hover:bg-slate-800/50 hover:text-primary-600 transition-colors">Experience</a>
+      <a href="#projects" class="mobile-menu-link block text-base font-medium py-2 px-3 rounded-lg hover:bg-slate-100/50 dark:hover:bg-slate-800/50 hover:text-primary-600 transition-colors">Projects</a>
+      <a href="#education" class="mobile-menu-link block text-base font-medium py-2 px-3 rounded-lg hover:bg-slate-100/50 dark:hover:bg-slate-800/50 hover:text-primary-600 transition-colors">Education</a>
+      <a href="#certifications" class="mobile-menu-link block text-base font-medium py-2 px-3 rounded-lg hover:bg-slate-100/50 dark:hover:bg-slate-800/50 hover:text-primary-600 transition-colors">Certifications</a>
+      <a href="#contact" class="mobile-menu-link block text-base font-medium py-2 px-3 rounded-lg hover:bg-slate-100/50 dark:hover:bg-slate-800/50 hover:text-primary-600 transition-colors">Contact</a>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       MAIN CONTENT CONTAINER
+       ========================================== -->
+  <main class="relative z-10">
+    
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Details (Left) -->
+        <div class="lg:col-span-7 flex flex-col justify-center text-center lg:text-left" data-aos="fade-right">
+          
+          <!-- Accent Badge -->
+          <div class="inline-flex items-center justify-center lg:justify-start space-x-2 mb-6">
+            <span class="px-4 py-1.5 rounded-full text-xs font-semibold tracking-wider text-primary-700 bg-primary-100 dark:text-accent-300 dark:bg-accent-950/50 border border-primary-200 dark:border-accent-900/30 uppercase">
+              Welcome to My Portfolio
+            </span>
+          </div>
+          
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4">
+            Hi, I'm <span class="bg-gradient-to-r from-primary-600 via-secondary-500 to-accent-500 bg-clip-text text-transparent">Yogashri R S</span>
+          </h1>
+          
+          <!-- Typing Subtitle -->
+          <div class="h-10 text-xl sm:text-2xl font-bold text-slate-700 dark:text-slate-300 mb-6 flex justify-center lg:justify-start items-center">
+            <span id="typing-text" class="text-secondary-600 dark:text-accent-400"></span>
+          </div>
+          
+          <p class="text-base sm:text-lg text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed mb-8 mx-auto lg:mx-0">
+            Motivated B.Tech graduate in Artificial Intelligence & Data Science with hands-on experience in Full Stack Java Development using Java, Spring Boot, and MySQL. Proficient in RESTful backend development, frontend design, and database management, with strong expertise in Machine Learning, Deep Learning, and Computer Vision.
+          </p>
+          
+          <!-- Actions Buttons -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4">
+            <a href="#contact" class="px-8 py-3.5 bg-gradient-to-r from-primary-600 to-secondary-500 text-white font-medium rounded-xl shadow-lg hover:shadow-primary-500/25 dark:hover:shadow-secondary-500/10 hover:-translate-y-0.5 transition-all duration-200 text-center w-full sm:w-auto">
+              Contact Me
+            </a>
+            <a href="javascript:window.print();" class="px-8 py-3.5 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 font-medium rounded-xl border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800/80 transition-all duration-200 text-center w-full sm:w-auto flex items-center justify-center space-x-2">
+              <i data-lucide="download" class="w-4 h-4"></i>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+        </div>
+        
+        <!-- Hero Illustration (Right) -->
+        <div class="lg:col-span-5 flex justify-center items-center" data-aos="fade-left">
+          <div class="relative w-72 h-72 sm:w-96 sm:h-96">
+            
+            <!-- Graphic Background Effects -->
+            <div class="absolute inset-0 bg-gradient-to-tr from-primary-600 to-accent-500 rounded-[30%_70%_70%_30%_/_30%_30%_70%_70%] opacity-20 dark:opacity-30 blur-2xl animate-float-slow"></div>
+            
+            <!-- Interactive Glassmorphic Outer Card -->
+            <div class="absolute inset-4 glassmorphism rounded-3xl p-6 flex flex-col justify-between shadow-2xl border border-white/40 dark:border-white/10 overflow-hidden group hover:scale-[1.02] transition-transform duration-300">
+              
+              <!-- Top bar mimic -->
+              <div class="flex items-center justify-between border-bottom border-slate-200 dark:border-slate-800 pb-3">
+                <div class="flex space-x-1.5">
+                  <span class="w-3 h-3 rounded-full bg-red-400"></span>
+                  <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
+                  <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+                </div>
+                <span class="text-[10px] tracking-wider uppercase text-slate-400 font-mono">portfolio.java</span>
+              </div>
+              
+              <!-- Abstract visual coding layer / illustration -->
+              <div class="my-auto py-4 font-mono text-xs sm:text-sm text-slate-600 dark:text-slate-300 space-y-2 select-none">
+                <p class="text-blue-500 dark:text-blue-400"><span class="text-purple-500 dark:text-purple-400">import</span> java.util.AI;</p>
+                <p class="text-purple-500 dark:text-purple-400">class <span class="text-yellow-600 dark:text-yellow-400">Yogashri</span> {</p>
+                <p class="pl-4 text-slate-500"><span class="text-blue-500">Skills</span> skills = <span class="text-blue-500">Skills</span>.get();</p>
+                <p class="pl-4 text-emerald-600 dark:text-emerald-400">// Loaded: Java, Spring Boot, PyTorch</p>
+                <p class="pl-4"><span class="text-purple-500">void</span> <span class="text-blue-500">createImpact</span>() {</p>
+                <p class="pl-8 text-slate-600 dark:text-slate-400">skills.buildFullStackApp();</p>
+                <p class="pl-8 text-slate-600 dark:text-slate-400">skills.trainDeepLearningModel();</p>
+                <p class="pl-4">}</p>
+                <p class="text-purple-500 dark:text-purple-400">}</p>
+              </div>
+
+              <!-- Graphic floating elements -->
+              <div class="flex items-center justify-between pt-3 border-t border-slate-200 dark:border-slate-800 text-xs">
+                <div class="flex items-center space-x-2 text-slate-500">
+                  <i data-lucide="git-branch" class="w-3.5 h-3.5 text-secondary-500"></i>
+                  <span>main</span>
+                </div>
+                <div class="flex items-center space-x-1 text-emerald-500 font-bold">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                  <span>Active</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Floating Decorative Tech Icons -->
+            <div class="absolute -top-4 -left-4 w-12 h-12 bg-white dark:bg-slate-900 rounded-xl shadow-lg flex items-center justify-center text-primary-600 border border-slate-100 dark:border-slate-800 animate-float-medium">
+              <i data-lucide="code" class="w-6 h-6"></i>
+            </div>
+            <div class="absolute -bottom-2 -right-4 w-14 h-14 bg-white dark:bg-slate-900 rounded-xl shadow-lg flex items-center justify-center text-secondary-500 border border-slate-100 dark:border-slate-800 animate-float-slow">
+              <i data-lucide="brain" class="w-7 h-7"></i>
+            </div>
+            <div class="absolute top-1/2 -right-8 w-10 h-10 bg-white dark:bg-slate-900 rounded-xl shadow-lg flex items-center justify-center text-accent-500 border border-slate-100 dark:border-slate-800 animate-float-fast">
+              <i data-lucide="database" class="w-5 h-5"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         ABOUT ME SECTION
+         ========================================== -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 border-t border-slate-200/50 dark:border-slate-800/30">
+      <div class="max-w-7xl mx-auto">
+        
+        <!-- Section Header -->
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">About Me</h2>
+          <div class="w-16 h-1.5 bg-gradient-to-r from-primary-600 to-secondary-500 rounded-full mx-auto mt-4"></div>
+          <p class="text-slate-500 dark:text-slate-400 mt-4 max-w-xl mx-auto">Get to know my professional background, statistics, and career motivations.</p>
+        </div>
+
+        <!-- Grid Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Personal Info Card (Left) -->
+          <div class="lg:col-span-5 flex flex-col" data-aos="fade-right">
+            <div class="glassmorphism rounded-3xl p-6 sm:p-8 shadow-xl border border-white/30 dark:border-white/5 flex-grow flex flex-col justify-between">
+              <div>
+                <!-- Profile Image Area -->
+                <div class="relative w-full aspect-[4/5] rounded-2xl overflow-hidden mb-6 shadow-md border border-slate-200 dark:border-slate-800/80 group">
+                  <img src="Yogi.png" alt="Yogashri R S" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                  <div class="absolute bottom-4 left-4 px-3 py-1.5 glassmorphism rounded-xl text-xs font-semibold flex items-center space-x-1.5 border border-white/30">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                    <span class="text-slate-800 dark:text-slate-200">Active Now</span>
+                  </div>
+                </div>
+
+                <!-- Profile Info Header -->
+                <div class="mb-6">
+                  <h3 class="text-2xl font-bold bg-gradient-to-r from-primary-600 to-secondary-500 bg-clip-text text-transparent">Yogashri R S</h3>
+                  <p class="text-sm text-slate-500 dark:text-slate-400 font-medium">Full Stack Java Developer | AI & DS Graduate</p>
+                  <p class="text-xs text-primary-500 dark:text-accent-400 font-semibold mt-1">Open to Opportunities</p>
+                </div>
+
+                <!-- Personal details checklist -->
+                <div class="space-y-4">
+                  <div class="flex items-start space-x-3 text-sm">
+                    <i data-lucide="user" class="w-5 h-5 text-primary-500 shrink-0 mt-0.5"></i>
+                    <div>
+                      <span class="block text-xs text-slate-400 font-medium uppercase tracking-wider">Name</span>
+                      <span class="text-slate-700 dark:text-slate-200 font-semibold">Yogashri R S</span>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start space-x-3 text-sm">
+                    <i data-lucide="briefcase" class="w-5 h-5 text-secondary-500 shrink-0 mt-0.5"></i>
+                    <div>
+                      <span class="block text-xs text-slate-400 font-medium uppercase tracking-wider">Role</span>
+                      <span class="text-slate-700 dark:text-slate-200 font-semibold">Full Stack Java Developer | AI & DS Graduate</span>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start space-x-3 text-sm">
+                    <i data-lucide="map-pin" class="w-5 h-5 text-accent-500 shrink-0 mt-0.5"></i>
+                    <div>
+                      <span class="block text-xs text-slate-400 font-medium uppercase tracking-wider">Location</span>
+                      <span class="text-slate-700 dark:text-slate-200 font-semibold">Perambalur, Tamil Nadu, India</span>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start space-x-3 text-sm">
+                    <i data-lucide="mail" class="w-5 h-5 text-rose-500 shrink-0 mt-0.5"></i>
+                    <div>
+                      <span class="block text-xs text-slate-400 font-medium uppercase tracking-wider">Email</span>
+                      <a href="mailto:yogirudhra03@gmail.com" class="text-slate-700 dark:text-slate-200 font-semibold hover:text-primary-600 transition-colors">yogirudhra03@gmail.com</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Links -->
+              <div class="flex items-center space-x-4 mt-8 pt-6 border-t border-slate-200 dark:border-slate-800">
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn Profile" class="p-2 bg-slate-100 hover:bg-primary-100 text-slate-600 hover:text-primary-600 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-300 dark:hover:text-white rounded-xl transition-all duration-200">
+                  <i data-lucide="linkedin" class="w-5 h-5"></i>
+                </a>
+                <a href="https://github.com" target="_blank" aria-label="GitHub Profile" class="p-2 bg-slate-100 hover:bg-secondary-100 text-slate-600 hover:text-secondary-600 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-300 dark:hover:text-white rounded-xl transition-all duration-200">
+                  <i data-lucide="github" class="w-5 h-5"></i>
+                </a>
+                <a href="mailto:yogirudhra03@gmail.com" aria-label="Email Me" class="p-2 bg-slate-100 hover:bg-rose-100 text-slate-600 hover:text-rose-600 dark:bg-slate-800 dark:hover:bg-slate-700 dark:text-slate-300 dark:hover:text-white rounded-xl transition-all duration-200">
+                  <i data-lucide="mail" class="w-5 h-5"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+          
+          <!-- Detailed bio + Stats Grid (Right) -->
+          <div class="lg:col-span-7 flex flex-col justify-between" data-aos="fade-left">
+            <div>
+              <h3 class="text-2xl font-bold mb-4">Bridging Backend Engineering and Artificial Intelligence</h3>
+              <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                I am a passionate technologist who loves building end-to-end applications. With a solid foundation in **Java**, **Spring Boot**, and **MySQL** for backend architectures, I complement my development skills with cutting-edge expertise in **Artificial Intelligence, Deep Learning, and Computer Vision**.
+              </p>
+              <p class="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                During my internship at Elysium Academy, I built several full-stack applications and mini-projects, honing my skills in creating scalable REST APIs, authentication protocols, and database management. My academic journey has allowed me to apply Deep Learning methods to solve real-world problems, such as object detection in complex environments.
+              </p>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+              
+              <!-- Stat Card 1 -->
+              <div class="glassmorphism p-5 rounded-2xl border border-white/20 dark:border-white/5 shadow-md text-center hover:scale-[1.03] transition-transform duration-200">
+                <span class="stat-number block text-3xl font-extrabold text-primary-600 dark:text-accent-400" data-target="3" data-suffix="+">0</span>
+                <span class="text-xs text-slate-500 dark:text-slate-400 font-medium uppercase tracking-wider block mt-1">Full Stack Apps</span>
+              </div>
+              
+              <!-- Stat Card 2 -->
+              <div class="glassmorphism p-5 rounded-2xl border border-white/20 dark:border-white/5 shadow-md text-center hover:scale-[1.03] transition-transform duration-200">
+                <span class="stat-number block text-3xl font-extrabold text-secondary-600 dark:text-purple-400" data-target="5" data-suffix="+">0</span>
+                <span class="text-xs text-slate-500 dark:text-slate-400 font-medium uppercase tracking-wider block mt-1">Mini Projects</span>
+              </div>
+
+              <!-- Stat Card 3 -->
+              <div class="glassmorphism p-5 rounded-2xl border border-white/20 dark:border-white/5 shadow-md text-center hover:scale-[1.03] transition-transform duration-200">
+                <span class="stat-number block text-3xl font-extrabold text-accent-600 dark:text-cyan-400" data-target="80" data-suffix="%">0</span>
+                <span class="text-xs text-slate-500 dark:text-slate-400 font-medium uppercase tracking-wider block mt-1">Academic Agg.</span>
+              </div>
+
+              <!-- Stat Card 4 -->
+              <div class="glassmorphism p-5 rounded-2xl border border-white/20 dark:border-white/5 shadow-md text-center hover:scale-[1.03] transition-transform duration-200">
+                <span class="stat-number block text-3xl font-extrabold text-emerald-600 dark:text-emerald-400" data-target="1" data-suffix="">0</span>
+                <span class="text-xs text-slate-500 dark:text-slate-400 font-medium uppercase tracking-wider block mt-1">Internship Done</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         TECHNICAL SKILLS SECTION
+         ========================================== -->
+    <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-100/50 dark:bg-slate-900/20 border-t border-slate-200/50 dark:border-slate-800/30">
+      <div class="max-w-7xl mx-auto">
+        
+        <!-- Section Header -->
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Technical Skills</h2>
+          <div class="w-16 h-1.5 bg-gradient-to-r from-primary-600 to-secondary-500 rounded-full mx-auto mt-4"></div>
+          <p class="text-slate-500 dark:text-slate-400 mt-4 max-w-xl mx-auto">An overview of my coding languages, developer tools, and areas of engineering expertise.</p>
+        </div>
+
+        <!-- Skills Categories Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Category 1: Languages -->
+          <div class="glassmorphism rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="100">
+            <div class="flex items-center space-x-3 mb-6">
+              <div class="p-2.5 bg-primary-100 dark:bg-primary-950/40 text-primary-600 dark:text-accent-400 rounded-xl">
+                <i data-lucide="terminal" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-lg font-bold">Programming Languages</h3>
+            </div>
+            
+            <div class="space-y-4 flex-grow">
+              <!-- Skill Item -->
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span>Java</span>
+                  <span>90%</span>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-2">
+                  <div class="progress-bar-fill bg-gradient-to-r from-primary-500 to-primary-600 h-2 rounded-full w-0" data-width="90%"></div>
+                </div>
+              </div>
+              <!-- Skill Item -->
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span>Python</span>
+                  <span>85%</span>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-2">
+                  <div class="progress-bar-fill bg-gradient-to-r from-primary-500 to-primary-600 h-2 rounded-full w-0" data-width="85%"></div>
+                </div>
+              </div>
+              <!-- Skill Item -->
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span>SQL</span>
+                  <span>85%</span>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-2">
+                  <div class="progress-bar-fill bg-gradient-to-r from-primary-500 to-primary-600 h-2 rounded-full w-0" data-width="85%"></div>
+                </div>
+              </div>
+              <!-- Skill Item -->
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span>JavaScript</span>
+                  <span>75%</span>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-2">
+                  <div class="progress-bar-fill bg-gradient-to-r from-primary-500 to-primary-600 h-2 rounded-full w-0" data-width="75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Backend -->
+          <div class="glassmorphism rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="200">
+            <div class="flex items-center space-x-3 mb-6">
+              <div class="p-2.5 bg-secondary-100 dark:bg-secondary-950/40 text-secondary-500 dark:text-purple-400 rounded-xl">
+                <i data-lucide="server" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-lg font-bold">Backend Development</h3>
+            </div>
+            
+            <div class="space-y-4 flex-grow">
+              <!-- Skill Item -->
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span>Spring Boot</span>
+                  <span>85%</span>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-2">
+                  <div class="progress-bar-fill bg-gradient-to-r from-secondary-500 to-secondary-600 h-2 rounded-full w-0" data-width="85%"></div>
+                </div>
+              </div>
+              <!-- Skill Item -->
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span>REST APIs</span>
+                  <span>85%</span>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-2">
+                  <div class="progress-bar-fill bg-gradient-to-r from-secondary-500 to-secondary-600 h-2 rounded-full w-0" data-width="85%"></div>
+                </div>
+              </div>
+              <!-- Skill Item -->
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span>Spring MVC & JDBC</span>
+                  <span>80%</span>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-2">
+                  <div class="progress-bar-fill bg-gradient-to-r from-secondary-500 to-secondary-600 h-2 rounded-full w-0" data-width="80%"></div>
+                </div>
+              </div>
+              <!-- Skill Item -->
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span>MVC Architecture</span>
+                  <span>90%</span>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-2">
+                  <div class="progress-bar-fill bg-gradient-to-r from-secondary-500 to-secondary-600 h-2 rounded-full w-0" data-width="90%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: AI / ML -->
+          <div class="glassmorphism rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="300">
+            <div class="flex items-center space-x-3 mb-6">
+              <div class="p-2.5 bg-accent-100 dark:bg-accent-950/40 text-accent-600 dark:text-cyan-400 rounded-xl">
+                <i data-lucide="cpu" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-lg font-bold">AI / Machine Learning</h3>
+            </div>
+            
+            <div class="space-y-4 flex-grow">
+              <!-- Skill Item -->
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span>Machine Learning</span>
+                  <span>80%</span>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-2">
+                  <div class="progress-bar-fill bg-gradient-to-r from-accent-500 to-accent-600 h-2 rounded-full w-0" data-width="80%"></div>
+                </div>
+              </div>
+              <!-- Skill Item -->
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span>Deep Learning & CNN</span>
+                  <span>75%</span>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-2">
+                  <div class="progress-bar-fill bg-gradient-to-r from-accent-500 to-accent-600 h-2 rounded-full w-0" data-width="75%"></div>
+                </div>
+              </div>
+              <!-- Skill Item -->
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span>Computer Vision & OpenCV</span>
+                  <span>80%</span>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-2">
+                  <div class="progress-bar-fill bg-gradient-to-r from-accent-500 to-accent-600 h-2 rounded-full w-0" data-width="80%"></div>
+                </div>
+              </div>
+              <!-- Skill Item -->
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span>TensorFlow & Keras</span>
+                  <span>75%</span>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-2">
+                  <div class="progress-bar-fill bg-gradient-to-r from-accent-500 to-accent-600 h-2 rounded-full w-0" data-width="75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Frontend -->
+          <div class="glassmorphism rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="400">
+            <div class="flex items-center space-x-3 mb-6">
+              <div class="p-2.5 bg-orange-100 dark:bg-orange-950/40 text-orange-600 rounded-xl">
+                <i data-lucide="layout" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-lg font-bold">Frontend Design</h3>
+            </div>
+            
+            <div class="space-y-4 flex-grow">
+              <!-- Skill Item -->
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span>HTML5 & CSS3</span>
+                  <span>90%</span>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-2">
+                  <div class="progress-bar-fill bg-gradient-to-r from-orange-500 to-orange-600 h-2 rounded-full w-0" data-width="90%"></div>
+                </div>
+              </div>
+              <!-- Skill Item -->
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span>Responsive Web Design</span>
+                  <span>90%</span>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-2">
+                  <div class="progress-bar-fill bg-gradient-to-r from-orange-500 to-orange-600 h-2 rounded-full w-0" data-width="90%"></div>
+                </div>
+              </div>
+              <!-- Skill Item -->
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span>Bootstrap</span>
+                  <span>80%</span>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-2">
+                  <div class="progress-bar-fill bg-gradient-to-r from-orange-500 to-orange-600 h-2 rounded-full w-0" data-width="80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 5: Database -->
+          <div class="glassmorphism rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="500">
+            <div class="flex items-center space-x-3 mb-6">
+              <div class="p-2.5 bg-emerald-100 dark:bg-emerald-950/40 text-emerald-600 rounded-xl">
+                <i data-lucide="database" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-lg font-bold">Database Management</h3>
+            </div>
+            
+            <div class="space-y-4 flex-grow">
+              <!-- Skill Item -->
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span>MySQL</span>
+                  <span>85%</span>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-2">
+                  <div class="progress-bar-fill bg-gradient-to-r from-emerald-500 to-emerald-600 h-2 rounded-full w-0" data-width="85%"></div>
+                </div>
+              </div>
+              <!-- Skill Item -->
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span>Relational Database Design</span>
+                  <span>85%</span>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-2">
+                  <div class="progress-bar-fill bg-gradient-to-r from-emerald-500 to-emerald-600 h-2 rounded-full w-0" data-width="85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 6: Tools -->
+          <div class="glassmorphism rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col" data-aos="fade-up" data-aos-delay="600">
+            <div class="flex items-center space-x-3 mb-6">
+              <div class="p-2.5 bg-rose-100 dark:bg-rose-950/40 text-rose-600 rounded-xl">
+                <i data-lucide="wrench" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-lg font-bold">Developer Tools</h3>
+            </div>
+            
+            <div class="space-y-4 flex-grow">
+              <!-- Skill Item -->
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span>Git & GitHub</span>
+                  <span>85%</span>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-2">
+                  <div class="progress-bar-fill bg-gradient-to-r from-rose-500 to-rose-600 h-2 rounded-full w-0" data-width="85%"></div>
+                </div>
+              </div>
+              <!-- Skill Item -->
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span>VS Code</span>
+                  <span>90%</span>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-2">
+                  <div class="progress-bar-fill bg-gradient-to-r from-rose-500 to-rose-600 h-2 rounded-full w-0" data-width="90%"></div>
+                </div>
+              </div>
+              <!-- Skill Item -->
+              <div>
+                <div class="flex justify-between text-xs font-semibold mb-1">
+                  <span>Eclipse IDE</span>
+                  <span>80%</span>
+                </div>
+                <div class="w-full bg-slate-200 dark:bg-slate-800 rounded-full h-2">
+                  <div class="progress-bar-fill bg-gradient-to-r from-rose-500 to-rose-600 h-2 rounded-full w-0" data-width="80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         EXPERIENCE SECTION
+         ========================================== -->
+    <section id="experience" class="py-20 px-4 sm:px-6 lg:px-8 border-t border-slate-200/50 dark:border-slate-800/30">
+      <div class="max-w-7xl mx-auto">
+        
+        <!-- Section Header -->
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Work Experience</h2>
+          <div class="w-16 h-1.5 bg-gradient-to-r from-primary-600 to-secondary-500 rounded-full mx-auto mt-4"></div>
+          <p class="text-slate-500 dark:text-slate-400 mt-4 max-w-xl mx-auto">My professional history and engineering contributions in industry internships.</p>
+        </div>
+
+        <!-- Timeline Container -->
+        <div class="max-w-4xl mx-auto relative pl-6 sm:pl-10">
+          
+          <!-- Vertical Timeline Axis Line -->
+          <div class="absolute left-0 top-0 h-full w-[2px] bg-slate-200 dark:bg-slate-800"></div>
+
+          <!-- Timeline item -->
+          <div class="relative mb-12 group" data-aos="fade-up">
+            
+            <!-- Bullet Point Indicator -->
+            <div class="timeline-dot absolute -left-[30px] sm:-left-[44px] top-1.5 w-6 h-6 rounded-full bg-gradient-to-r from-primary-600 to-secondary-500 border-4 border-slate-50 dark:border-slate-950 flex items-center justify-center transition-transform group-hover:scale-110 duration-200">
+              <span class="w-2 h-2 rounded-full bg-white"></span>
+            </div>
+
+            <!-- Experience Details Card -->
+            <div class="glassmorphism rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-white/20 dark:border-white/5 relative">
+              
+              <!-- Tag / Date -->
+              <span class="absolute top-6 right-6 px-3 py-1 rounded-full text-xs font-semibold text-primary-700 bg-primary-100 dark:text-accent-300 dark:bg-accent-950/40 border border-primary-200 dark:border-accent-900/20">
+                Apr 2025 – Aug 2025
+              </span>
+
+              <h3 class="text-xl font-bold text-slate-800 dark:text-slate-100">Full Stack Java Developer Intern</h3>
+              <p class="text-sm font-semibold text-secondary-600 dark:text-purple-400 mt-1">Elysium Academy</p>
+
+              <div class="mt-6 space-y-3.5 text-slate-600 dark:text-slate-400 text-sm sm:text-base">
+                <div class="flex items-start space-x-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 mt-1 shrink-0"></i>
+                  <span>Developed and tested 3+ Full Stack Web Applications using MVC principles.</span>
+                </div>
+                <div class="flex items-start space-x-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 mt-1 shrink-0"></i>
+                  <span>Built a comprehensive **Event Management System** with dynamic user interfaces and backend validation.</span>
+                </div>
+                <div class="flex items-start space-x-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 mt-1 shrink-0"></i>
+                  <span>Implemented secure login authentication features and configured an administrative dashboard control system.</span>
+                </div>
+                <div class="flex items-start space-x-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 mt-1 shrink-0"></i>
+                  <span>Designed and integrated structured RESTful APIs, enabling smooth JSON communication pipelines.</span>
+                </div>
+                <div class="flex items-start space-x-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 mt-1 shrink-0"></i>
+                  <span>Managed schemas, optimized query statements, and processed persistent data in a MySQL database.</span>
+                </div>
+                <div class="flex items-start space-x-2">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-500 mt-1 shrink-0"></i>
+                  <span>Successfully built and deployed 5+ mini-projects as part of ongoing performance reviews.</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PROJECTS SECTION
+         ========================================== -->
+    <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-100/50 dark:bg-slate-900/20 border-t border-slate-200/50 dark:border-slate-800/30">
+      <div class="max-w-7xl mx-auto">
+        
+        <!-- Section Header -->
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Featured Projects</h2>
+          <div class="w-16 h-1.5 bg-gradient-to-r from-primary-600 to-secondary-500 rounded-full mx-auto mt-4"></div>
+          <p class="text-slate-500 dark:text-slate-400 mt-4 max-w-xl mx-auto">A display of major academic and internship projects illustrating technical versatility.</p>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
+          
+          <!-- Project 1 Card -->
+          <div class="project-card glassmorphism rounded-2xl overflow-hidden shadow-lg border border-white/20 dark:border-white/5 flex flex-col" data-aos="fade-up" data-aos-delay="100">
+            
+            <!-- Graphic Image Placeholder -->
+            <div class="relative h-52 w-full bg-gradient-to-br from-primary-600/80 to-accent-600/80 flex items-center justify-center overflow-hidden">
+              <!-- Visual abstraction of underwater object detection -->
+              <div class="absolute inset-0 bg-cover bg-center mix-blend-overlay opacity-30" style="background-image: url('https://images.unsplash.com/photo-1551244072-5d12893278ab?auto=format&fit=crop&q=80&w=800');"></div>
+              <div class="relative z-10 flex flex-col items-center justify-center text-center px-4">
+                <i data-lucide="eye" class="w-16 h-16 text-white/90 animate-pulse mb-3"></i>
+                <span class="text-xs uppercase tracking-widest text-accent-200 font-bold font-mono">Deep Learning / CV</span>
+              </div>
+              <div class="absolute top-4 left-4 bg-slate-900/70 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold text-accent-300 border border-slate-700">
+                Academic Capstone
+              </div>
+            </div>
+
+            <!-- Project Details -->
+            <div class="p-6 sm:p-8 flex-grow flex flex-col justify-between">
+              <div>
+                <h3 class="text-2xl font-bold text-slate-800 dark:text-slate-100 mb-3">Underwater Object Detection System</h3>
+                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
+                  Developed an automated, high-precision detection system utilizing custom Convolutional Neural Networks (CNN) to identify submerged marine objects and assess real-time environmental water quality parameters from sensor readings.
+                </p>
+
+                <!-- Tech Badges -->
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span class="px-2.5 py-1 text-[11px] font-semibold rounded-md bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-200 border border-slate-200/50 dark:border-slate-700/50">Python</span>
+                  <span class="px-2.5 py-1 text-[11px] font-semibold rounded-md bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-200 border border-slate-200/50 dark:border-slate-700/50">TensorFlow</span>
+                  <span class="px-2.5 py-1 text-[11px] font-semibold rounded-md bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-200 border border-slate-200/50 dark:border-slate-700/50">OpenCV</span>
+                  <span class="px-2.5 py-1 text-[11px] font-semibold rounded-md bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-200 border border-slate-200/50 dark:border-slate-700/50">CNN</span>
+                  <span class="px-2.5 py-1 text-[11px] font-semibold rounded-md bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-200 border border-slate-200/50 dark:border-slate-700/50">NumPy</span>
+                </div>
+
+                <!-- Features list -->
+                <div class="space-y-2 mb-8 text-xs sm:text-sm text-slate-500">
+                  <div class="flex items-center space-x-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-accent-500"></span>
+                    <span>Real-time frame processing & bounding box overlay.</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-accent-500"></span>
+                    <span>Multi-sensor data fusion mapping (Sonar & optical coordinates).</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-accent-500"></span>
+                    <span>Trained models show over 92% classification accuracy metrics.</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="flex items-center space-x-4 pt-4 border-t border-slate-200 dark:border-slate-800">
+                <a href="https://github.com" target="_blank" class="flex items-center justify-center space-x-2 px-4 py-2 text-xs font-semibold rounded-lg bg-slate-900 text-white dark:bg-slate-800 dark:text-slate-100 hover:bg-slate-800 dark:hover:bg-slate-700 transition-colors flex-1 text-center">
+                  <i data-lucide="github" class="w-4 h-4"></i>
+                  <span>GitHub</span>
+                </a>
+                <a href="#projects" class="flex items-center justify-center space-x-2 px-4 py-2 text-xs font-semibold rounded-lg border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors flex-1 text-center">
+                  <i data-lucide="external-link" class="w-4 h-4"></i>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Project 2 Card -->
+          <div class="project-card glassmorphism rounded-2xl overflow-hidden shadow-lg border border-white/20 dark:border-white/5 flex flex-col" data-aos="fade-up" data-aos-delay="200">
+            
+            <!-- Graphic Image Placeholder -->
+            <div class="relative h-52 w-full bg-gradient-to-br from-secondary-600/80 to-primary-600/80 flex items-center justify-center overflow-hidden">
+              <!-- Visual abstraction of event management -->
+              <div class="absolute inset-0 bg-cover bg-center mix-blend-overlay opacity-30" style="background-image: url('https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=800');"></div>
+              <div class="relative z-10 flex flex-col items-center justify-center text-center px-4">
+                <i data-lucide="calendar" class="w-16 h-16 text-white/90 animate-bounce mb-3"></i>
+                <span class="text-xs uppercase tracking-widest text-purple-200 font-bold font-mono">Full Stack Java / Web</span>
+              </div>
+              <div class="absolute top-4 left-4 bg-slate-900/70 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold text-purple-300 border border-slate-700">
+                Internship Capstone
+              </div>
+            </div>
+
+            <!-- Project Details -->
+            <div class="p-6 sm:p-8 flex-grow flex flex-col justify-between">
+              <div>
+                <h3 class="text-2xl font-bold text-slate-800 dark:text-slate-100 mb-3">Event Management System</h3>
+                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
+                  Engineered a secure, multi-tenant administrative system for organization-wide event booking, featuring user authentication, transactional SQL databases, and responsive client scheduling portals.
+                </p>
+
+                <!-- Tech Badges -->
+                <div class="flex flex-wrap gap-2 mb-6">
+                  <span class="px-2.5 py-1 text-[11px] font-semibold rounded-md bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-200 border border-slate-200/50 dark:border-slate-700/50">Java</span>
+                  <span class="px-2.5 py-1 text-[11px] font-semibold rounded-md bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-200 border border-slate-200/50 dark:border-slate-700/50">Spring Boot</span>
+                  <span class="px-2.5 py-1 text-[11px] font-semibold rounded-md bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-200 border border-slate-200/50 dark:border-slate-700/50">MySQL</span>
+                  <span class="px-2.5 py-1 text-[11px] font-semibold rounded-md bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-200 border border-slate-200/50 dark:border-slate-700/50">Bootstrap</span>
+                  <span class="px-2.5 py-1 text-[11px] font-semibold rounded-md bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-200 border border-slate-200/50 dark:border-slate-700/50">Thymeleaf</span>
+                </div>
+
+                <!-- Features list -->
+                <div class="space-y-2 mb-8 text-xs sm:text-sm text-slate-500">
+                  <div class="flex items-center space-x-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-secondary-500"></span>
+                    <span>Role-based login authorization (Spring Security concepts).</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-secondary-500"></span>
+                    <span>Interactive booking dashboard with database triggers.</span>
+                  </div>
+                  <div class="flex items-center space-x-2">
+                    <span class="w-1.5 h-1.5 rounded-full bg-secondary-500"></span>
+                    <span>REST endpoints for calendar views and scheduling.</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="flex items-center space-x-4 pt-4 border-t border-slate-200 dark:border-slate-800">
+                <a href="https://github.com" target="_blank" class="flex items-center justify-center space-x-2 px-4 py-2 text-xs font-semibold rounded-lg bg-slate-900 text-white dark:bg-slate-800 dark:text-slate-100 hover:bg-slate-800 dark:hover:bg-slate-700 transition-colors flex-1 text-center">
+                  <i data-lucide="github" class="w-4 h-4"></i>
+                  <span>GitHub</span>
+                </a>
+                <a href="#projects" class="flex items-center justify-center space-x-2 px-4 py-2 text-xs font-semibold rounded-lg border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors flex-1 text-center">
+                  <i data-lucide="external-link" class="w-4 h-4"></i>
+                  <span>Live Demo</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         EDUCATION SECTION
+         ========================================== -->
+    <section id="education" class="py-20 px-4 sm:px-6 lg:px-8 border-t border-slate-200/50 dark:border-slate-800/30">
+      <div class="max-w-7xl mx-auto">
+        
+        <!-- Section Header -->
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Education</h2>
+          <div class="w-16 h-1.5 bg-gradient-to-r from-primary-600 to-secondary-500 rounded-full mx-auto mt-4"></div>
+          <p class="text-slate-500 dark:text-slate-400 mt-4 max-w-xl mx-auto">Academic milestones and educational achievements.</p>
+        </div>
+
+        <!-- Education Grid -->
+        <div class="max-w-4xl mx-auto" data-aos="fade-up">
+          <div class="glassmorphism rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-lg transition-all duration-300 border border-white/20 dark:border-white/5 flex flex-col md:flex-row justify-between items-start md:items-center relative">
+            
+            <div class="flex items-start space-x-4">
+              <!-- Graduation Cap Icon Container -->
+              <div class="p-3 bg-primary-100 dark:bg-primary-950/40 text-primary-600 dark:text-accent-400 rounded-xl shrink-0">
+                <i data-lucide="graduation-cap" class="w-8 h-8"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-slate-800 dark:text-slate-100">B.Tech in Artificial Intelligence & Data Science</h3>
+                <p class="text-sm font-semibold text-secondary-600 dark:text-purple-400 mt-1">Muthayammal Engineering College</p>
+                <div class="flex flex-wrap gap-x-4 gap-y-2 mt-4 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+                  <span class="flex items-center space-x-1">
+                    <i data-lucide="calendar" class="w-4 h-4 text-primary-500"></i>
+                    <span>2021 - 2025</span>
+                  </span>
+                  <span class="flex items-center space-x-1">
+                    <i data-lucide="award" class="w-4 h-4 text-secondary-500"></i>
+                    <span class="font-semibold text-slate-700 dark:text-slate-300">Aggregate: 80%</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Optional right element (Location Tag) -->
+            <div class="mt-4 md:mt-0 self-end md:self-center">
+              <span class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-semibold text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+                <span>Namakkal, TN</span>
+              </span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CERTIFICATIONS SECTION
+         ========================================== -->
+    <section id="certifications" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-100/50 dark:bg-slate-900/20 border-t border-slate-200/50 dark:border-slate-800/30">
+      <div class="max-w-7xl mx-auto">
+        
+        <!-- Section Header -->
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Professional Certifications</h2>
+          <div class="w-16 h-1.5 bg-gradient-to-r from-primary-600 to-secondary-500 rounded-full mx-auto mt-4"></div>
+          <p class="text-slate-500 dark:text-slate-400 mt-4 max-w-xl mx-auto">Technical credentials and courses validated by educational institutes and training academies.</p>
+        </div>
+
+        <!-- Certifications Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Cert 1 -->
+          <div class="glassmorphism rounded-2xl p-6 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-white/20 dark:border-white/5 flex flex-col justify-between" data-aos="zoom-in" data-aos-delay="100">
+            <div>
+              <div class="p-2.5 bg-primary-100 dark:bg-primary-950/40 text-primary-600 dark:text-accent-400 rounded-xl w-fit mb-4">
+                <i data-lucide="award" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-bold text-sm sm:text-base text-slate-800 dark:text-slate-100 leading-snug">Full Stack Java Development</h3>
+              <p class="text-xs text-secondary-600 dark:text-purple-400 font-semibold mt-1">Elysium Academy</p>
+            </div>
+            <div class="mt-6 flex items-center justify-between text-xs text-slate-400">
+              <span>Verified Credential</span>
+              <i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="glassmorphism rounded-2xl p-6 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-white/20 dark:border-white/5 flex flex-col justify-between" data-aos="zoom-in" data-aos-delay="200">
+            <div>
+              <div class="p-2.5 bg-secondary-100 dark:bg-secondary-950/40 text-secondary-500 dark:text-purple-400 rounded-xl w-fit mb-4">
+                <i data-lucide="award" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-bold text-sm sm:text-base text-slate-800 dark:text-slate-100 leading-snug">Java Programming & Data Structures</h3>
+              <p class="text-xs text-secondary-600 dark:text-purple-400 font-semibold mt-1">Terv Technologies</p>
+            </div>
+            <div class="mt-6 flex items-center justify-between text-xs text-slate-400">
+              <span>Verified Credential</span>
+              <i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="glassmorphism rounded-2xl p-6 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-white/20 dark:border-white/5 flex flex-col justify-between" data-aos="zoom-in" data-aos-delay="300">
+            <div>
+              <div class="p-2.5 bg-accent-100 dark:bg-accent-950/40 text-accent-600 dark:text-cyan-400 rounded-xl w-fit mb-4">
+                <i data-lucide="award" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-bold text-sm sm:text-base text-slate-800 dark:text-slate-100 leading-snug">Web Designing</h3>
+              <p class="text-xs text-secondary-600 dark:text-purple-400 font-semibold mt-1">Technology Learning Centre</p>
+            </div>
+            <div class="mt-6 flex items-center justify-between text-xs text-slate-400">
+              <span>Verified Credential</span>
+              <i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="glassmorphism rounded-2xl p-6 shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-white/20 dark:border-white/5 flex flex-col justify-between" data-aos="zoom-in" data-aos-delay="400">
+            <div>
+              <div class="p-2.5 bg-emerald-100 dark:bg-emerald-950/40 text-emerald-600 rounded-xl w-fit mb-4">
+                <i data-lucide="award" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-bold text-sm sm:text-base text-slate-800 dark:text-slate-100 leading-snug">Cloud Computing & Distributed Systems</h3>
+              <p class="text-xs text-secondary-600 dark:text-purple-400 font-semibold mt-1">NPTEL (Elite Certificate – 81%)</p>
+            </div>
+            <div class="mt-6 flex items-center justify-between text-xs text-slate-400">
+              <span>Elite Grade Verification</span>
+              <i data-lucide="shield-check" class="w-4 h-4 text-emerald-500"></i>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         LANGUAGES SECTION
+         ========================================== -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 border-t border-slate-200/50 dark:border-slate-800/30">
+      <div class="max-w-7xl mx-auto">
+        
+        <!-- Section Header -->
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Languages</h2>
+          <div class="w-16 h-1.5 bg-gradient-to-r from-primary-600 to-secondary-500 rounded-full mx-auto mt-4"></div>
+          <p class="text-slate-500 dark:text-slate-400 mt-4 max-w-xl mx-auto">Linguistic proficiencies and communications fluency.</p>
+        </div>
+
+        <!-- Languages Cards Grid -->
+        <div class="flex flex-wrap justify-center gap-8 max-w-2xl mx-auto" data-aos="fade-up">
+          
+          <!-- English -->
+          <div class="glassmorphism rounded-2xl p-6 shadow-md border border-white/20 dark:border-white/5 w-full sm:w-72 hover:scale-[1.02] transition-transform duration-200">
+            <div class="flex items-center space-x-3 mb-4">
+              <div class="p-2.5 bg-primary-100 dark:bg-primary-950/40 text-primary-600 dark:text-accent-400 rounded-xl">
+                <i data-lucide="languages" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-lg font-bold">English</h3>
+            </div>
+            <p class="text-sm text-slate-500 dark:text-slate-400">Intermediate Proficiency</p>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-xs font-semibold text-primary-700 bg-primary-100 dark:text-accent-300 dark:bg-accent-950/40 px-2.5 py-0.5 rounded-full border border-primary-200 dark:border-accent-905">Professional Working</span>
+            </div>
+          </div>
+
+          <!-- Hindi -->
+          <div class="glassmorphism rounded-2xl p-6 shadow-md border border-white/20 dark:border-white/5 w-full sm:w-72 hover:scale-[1.02] transition-transform duration-200">
+            <div class="flex items-center space-x-3 mb-4">
+              <div class="p-2.5 bg-secondary-100 dark:bg-secondary-950/40 text-secondary-500 dark:text-purple-400 rounded-xl">
+                <i data-lucide="languages" class="w-5 h-5"></i>
+              </div>
+              <h3 class="text-lg font-bold">Hindi</h3>
+            </div>
+            <p class="text-sm text-slate-500 dark:text-slate-400">Advanced (Level 8) Proficiency</p>
+            <div class="mt-4 flex items-center justify-between">
+              <span class="text-xs font-semibold text-secondary-700 bg-secondary-100 dark:text-purple-300 dark:bg-secondary-950/40 px-2.5 py-0.5 rounded-full border border-secondary-200 dark:border-secondary-905">Highly Fluent</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT SECTION
+         ========================================== -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-100/50 dark:bg-slate-900/20 border-t border-slate-200/50 dark:border-slate-800/30">
+      <div class="max-w-7xl mx-auto">
+        
+        <!-- Section Header -->
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Get In Touch</h2>
+          <div class="w-16 h-1.5 bg-gradient-to-r from-primary-600 to-secondary-500 rounded-full mx-auto mt-4"></div>
+          <p class="text-slate-500 dark:text-slate-400 mt-4 max-w-xl mx-auto">Feel free to drop a message. I'll get back to you as soon as possible!</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 max-w-5xl mx-auto">
+          
+          <!-- Contact Details (Left) -->
+          <div class="lg:col-span-5 space-y-6" data-aos="fade-right">
+            
+            <h3 class="text-2xl font-bold">Contact Details</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
+              I am interested in Java developer internships or full-time opportunities. Please reach out if you have any questions or would like to discuss potential projects.
+            </p>
+
+            <div class="space-y-4">
+              
+              <!-- Contact Item -->
+              <div class="glassmorphism rounded-2xl p-5 flex items-start space-x-4 border border-white/20 dark:border-white/5 shadow-sm">
+                <div class="p-3 bg-primary-100 dark:bg-primary-950/40 text-primary-600 dark:text-accent-400 rounded-xl shrink-0">
+                  <i data-lucide="mail" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-slate-400 uppercase tracking-wider">Email Address</h4>
+                  <a href="mailto:yogirudhra03@gmail.com" class="text-slate-700 dark:text-slate-200 font-semibold hover:text-primary-600 transition-colors mt-0.5 block break-all">yogirudhra03@gmail.com</a>
+                </div>
+              </div>
+
+              <!-- Contact Item -->
+              <div class="glassmorphism rounded-2xl p-5 flex items-start space-x-4 border border-white/20 dark:border-white/5 shadow-sm">
+                <div class="p-3 bg-secondary-100 dark:bg-secondary-950/40 text-secondary-500 dark:text-purple-400 rounded-xl shrink-0">
+                  <i data-lucide="map-pin" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-slate-400 uppercase tracking-wider">Location</h4>
+                  <p class="text-slate-700 dark:text-slate-200 font-semibold mt-0.5">Perambalur, Tamil Nadu, India</p>
+                </div>
+              </div>
+
+              <!-- Contact Item (Socials List) -->
+              <div class="glassmorphism rounded-2xl p-5 flex items-start space-x-4 border border-white/20 dark:border-white/5 shadow-sm">
+                <div class="p-3 bg-accent-100 dark:bg-accent-950/40 text-accent-600 dark:text-cyan-400 rounded-xl shrink-0">
+                  <i data-lucide="share-2" class="w-6 h-6"></i>
+                </div>
+                <div class="w-full">
+                  <h4 class="font-bold text-sm text-slate-400 uppercase tracking-wider">Social Channels</h4>
+                  <div class="flex items-center space-x-4 mt-2">
+                    <a href="https://linkedin.com" target="_blank" class="text-slate-600 hover:text-primary-600 dark:text-slate-300 dark:hover:text-accent-400 text-sm font-semibold flex items-center space-x-1">
+                      <i data-lucide="linkedin" class="w-4 h-4"></i>
+                      <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com" target="_blank" class="text-slate-600 hover:text-secondary-600 dark:text-slate-300 dark:hover:text-purple-400 text-sm font-semibold flex items-center space-x-1">
+                      <i data-lucide="github" class="w-4 h-4"></i>
+                      <span>GitHub</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Professional Contact Form (Right) -->
+          <div class="lg:col-span-7" data-aos="fade-left">
+            <div class="glassmorphism rounded-3xl p-6 sm:p-8 shadow-xl border border-white/30 dark:border-white/5">
+              
+              <h3 class="text-2xl font-bold mb-6">Send Me a Message</h3>
+
+              <form id="contact-form" class="space-y-5">
+                
+                <!-- Name and Email Row -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                  <div class="flex flex-col space-y-1.5">
+                    <label for="name" class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Your Name</label>
+                    <input type="text" id="name" required class="px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 dark:bg-slate-900/50 dark:border-slate-800 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-shadow" placeholder="Yogashri R S">
+                  </div>
+                  <div class="flex flex-col space-y-1.5">
+                    <label for="email" class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Your Email</label>
+                    <input type="email" id="email" required class="px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 dark:bg-slate-900/50 dark:border-slate-800 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-shadow" placeholder="[EMAIL_ADDRESS]">
+                  </div>
+                </div>
+
+                <!-- Subject -->
+                <div class="flex flex-col space-y-1.5">
+                  <label for="subject" class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Subject</label>
+                  <input type="text" id="subject" required class="px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 dark:bg-slate-900/50 dark:border-slate-800 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-shadow" placeholder="Project Inquiry / Job Opportunity">
+                </div>
+
+                <!-- Message -->
+                <div class="flex flex-col space-y-1.5">
+                  <label for="message" class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Message</label>
+                  <textarea id="message" rows="5" required class="px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 dark:bg-slate-900/50 dark:border-slate-800 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-shadow" placeholder="Your message here..."></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="w-full py-3.5 bg-gradient-to-r from-primary-600 to-secondary-500 text-white font-semibold rounded-xl shadow-lg hover:shadow-primary-500/25 dark:hover:shadow-secondary-500/10 hover:-translate-y-0.5 transition-all duration-200 flex items-center justify-center space-x-2">
+                  <i data-lucide="send" class="w-4 h-4"></i>
+                  <span>Send Message</span>
+                </button>
+                
+                <!-- Client Side Status Banner -->
+                <div id="form-status" class="hidden"></div>
+
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       FOOTER SECTION
+       ========================================== -->
+  <footer class="py-12 border-t border-slate-200/50 dark:border-slate-800/30 bg-white dark:bg-slate-950 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+        
+        <!-- Copyright Info -->
+        <div class="text-center md:text-left text-sm text-slate-400">
+          <p class="font-semibold text-slate-700 dark:text-slate-300 text-base mb-1">Yogashri R S</p>
+          <p>&copy; 2026 Yogashri R S. All rights reserved.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="flex flex-wrap justify-center gap-6 text-sm text-slate-500">
+          <a href="#home" class="hover:text-primary-600 dark:hover:text-accent-400 transition-colors">Home</a>
+          <a href="#about" class="hover:text-primary-600 dark:hover:text-accent-400 transition-colors">About</a>
+          <a href="#skills" class="hover:text-primary-600 dark:hover:text-accent-400 transition-colors">Skills</a>
+          <a href="#projects" class="hover:text-primary-600 dark:hover:text-accent-400 transition-colors">Projects</a>
+          <a href="#contact" class="hover:text-primary-600 dark:hover:text-accent-400 transition-colors">Contact</a>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex items-center space-x-4">
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" class="p-2 text-slate-400 hover:text-primary-600 hover:bg-slate-100 dark:hover:bg-slate-800/50 rounded-xl transition-colors">
+            <i data-lucide="linkedin" class="w-5 h-5"></i>
+          </a>
+          <a href="https://github.com" target="_blank" aria-label="GitHub" class="p-2 text-slate-400 hover:text-secondary-500 hover:bg-slate-100 dark:hover:bg-slate-800/50 rounded-xl transition-colors">
+            <i data-lucide="github" class="w-5 h-5"></i>
+          </a>
+          <a href="mailto:yogirudhra03@gmail.com" aria-label="Email" class="p-2 text-slate-400 hover:text-rose-500 hover:bg-slate-100 dark:hover:bg-slate-800/50 rounded-xl transition-colors">
+            <i data-lucide="mail" class="w-5 h-5"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS (Animate on Scroll) JS script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
